@@ -1,0 +1,19 @@
+{
+  "completed": true,
+  "optimizer_steps": 48,
+  "nonzero_gradient_steps": 34,
+  "rollout_completions": 192,
+  "informative_groups": 5,
+  "total_groups": 48,
+  "changed_parameter_elements": 540671,
+  "parameter_delta_l2": 0.5679223491250973,
+  "before_accuracy": 0.09375,
+  "after_accuracy": 0.1875,
+  "before_correct": 3,
+  "after_correct": 6,
+  "test_size": 32,
+  "before_format_valid_rate": 1.0,
+  "after_format_valid_rate": 1.0,
+  "training_seconds": 13.581417199995485,
+  "total_seconds": 17.254295599996112
+}

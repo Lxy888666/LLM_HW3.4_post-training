@@ -1,0 +1,62 @@
+{
+  "status": "all_passed",
+  "disjoint_split_sizes": {
+    "train": 2048,
+    "validation": 128,
+    "test": 32,
+    "fresh_test": 256
+  },
+  "sft_optimizer_steps": 1024,
+  "grpo_optimizer_steps": 256,
+  "grpo_nonzero_gradient_calls": 256,
+  "group_distribution": {
+    "all_correct": 210,
+    "mixed": 40,
+    "all_wrong": 6
+  },
+  "rollout_mean_reward": 0.9228515625,
+  "informative_group_rate": 0.15625,
+  "selected_stage": "sft_epoch_4",
+  "paired_comparisons": {
+    "test": {
+      "base_to_sft": {
+        "before_correct": 3,
+        "after_correct": 28,
+        "repaired": 26,
+        "broken": 1
+      },
+      "sft_to_grpo_final": {
+        "before_correct": 28,
+        "after_correct": 28,
+        "repaired": 2,
+        "broken": 2
+      },
+      "base_to_selected": {
+        "before_correct": 3,
+        "after_correct": 28,
+        "repaired": 26,
+        "broken": 1
+      }
+    },
+    "fresh_test": {
+      "base_to_sft": {
+        "before_correct": 26,
+        "after_correct": 221,
+        "repaired": 201,
+        "broken": 6
+      },
+      "sft_to_grpo_final": {
+        "before_correct": 221,
+        "after_correct": 220,
+        "repaired": 5,
+        "broken": 6
+      },
+      "base_to_selected": {
+        "before_correct": 26,
+        "after_correct": 221,
+        "repaired": 201,
+        "broken": 6
+      }
+    }
+  }
+}

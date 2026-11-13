@@ -1,0 +1,84 @@
+{
+  "status": "all_passed",
+  "probe_count": 8,
+  "torch_version": "2.5.1+cu121",
+  "source": {
+    "revisions": {
+      "OpenRLHF": "a542dd98d29efacef89a4f694366e66c6e6d419b",
+      "verl": "8fdc4d3f202f41461f4de9f42a637228e342668b"
+    },
+    "files": {
+      "OpenRLHF/openrlhf/models/utils.py": "309dce4b14b968c6c393236cf264ad0802572c7ddf466ea6ddfcefb385d1f85d",
+      "OpenRLHF/openrlhf/models/loss.py": "7c9606fe39d5a007c59f63d458405f2bd16b2d14ffeeecb59ec6042096ca4125",
+      "OpenRLHF/openrlhf/trainer/ppo_utils/experience_maker.py": "1db3b7121d338c0234b9849c681c727a1a8e9d36115f6d23e05683ecff761808",
+      "verl/verl/trainer/ppo/core_algos.py": "c1072ca7983a8301d0c6d0659aa3f15b552d721d1b9f28efc6dc224713dabc8d",
+      "verl/verl/utils/torch_functional.py": "f540bf2d2e2a69c6732f2c4a4d71b428f10b8834b894555a4bfe4bc41acb7fb4"
+    }
+  },
+  "results": {
+    "ppo_clipping_and_mask": {
+      "loss": -0.15000000596046448,
+      "gradient": [
+        [
+          0.0,
+          0.0,
+          -0.2750000059604645,
+          0.22499999403953552,
+          0.0
+        ]
+      ]
+    },
+    "terminal_reward_placement": [
+      [
+        -0.020000001415610313,
+        0.9800000190734863,
+        0.0
+      ],
+      [
+        -0.020000001415610313,
+        -0.020000001415610313,
+        1.9800000190734863
+      ]
+    ],
+    "gae_backward_propagation": [
+      [
+        0.5184000134468079,
+        0.7200000286102295,
+        1.0
+      ]
+    ],
+    "clipped_value_loss": 0.320000022649765,
+    "grpo_grouping_and_normalization": {
+      "normalized": [
+        1.4999970197677612,
+        -0.4999989867210388,
+        -0.4999989867210388,
+        -0.4999989867210388,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "centered": [
+        0.75,
+        -0.25,
+        -0.25,
+        -0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "uid_permutation_invariant": true
+    },
+    "grpo_singleton_fallback": 6.999993324279785,
+    "loss_aggregation": {
+      "token_mean": 2.3333332538604736,
+      "sequence_mean": 2.0
+    },
+    "dual_clip_difference": {
+      "OpenRLHF": 4.0,
+      "verl": 3.0
+    }
+  }
+}

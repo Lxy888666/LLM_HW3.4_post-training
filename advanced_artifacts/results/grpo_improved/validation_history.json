@@ -1,0 +1,46 @@
+[
+  {
+    "stage": "base",
+    "validation_correct": 15
+  },
+  {
+    "stage": "sft",
+    "epoch": 1,
+    "validation_correct": 61
+  },
+  {
+    "stage": "sft",
+    "epoch": 2,
+    "validation_correct": 80
+  },
+  {
+    "stage": "sft",
+    "epoch": 3,
+    "validation_correct": 106
+  },
+  {
+    "stage": "sft",
+    "epoch": 4,
+    "validation_correct": 115
+  },
+  {
+    "stage": "grpo",
+    "rollout_step": 32,
+    "validation_correct": 111
+  },
+  {
+    "stage": "grpo",
+    "rollout_step": 64,
+    "validation_correct": 115
+  },
+  {
+    "stage": "grpo",
+    "rollout_step": 96,
+    "validation_correct": 112
+  },
+  {
+    "stage": "grpo",
+    "rollout_step": 128,
+    "validation_correct": 114
+  }
+]

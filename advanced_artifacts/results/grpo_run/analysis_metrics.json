@@ -1,0 +1,12 @@
+{
+  "group_distribution": {
+    "all_wrong": 39,
+    "all_correct": 4,
+    "mixed": 5
+  },
+  "correct_rollouts": 24.0,
+  "repair_count": 3,
+  "break_count": 0,
+  "before_mean_response_tokens": 3.5625,
+  "after_mean_response_tokens": 3.59375
+}

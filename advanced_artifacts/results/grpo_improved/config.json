@@ -1,0 +1,63 @@
+{
+  "seed": 20261113,
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "base_model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "train_size": 2048,
+  "validation_size": 128,
+  "test_size": 32,
+  "fresh_test_size": 256,
+  "sft_epochs": 4,
+  "sft_batch_size": 8,
+  "sft_peak_lr": 0.0005,
+  "sft_final_lr_fraction": 0.1,
+  "sft_warmup_fraction": 0.05,
+  "sft_optimizer_steps": 1024,
+  "rollout_steps": 128,
+  "prompts_per_step": 2,
+  "group_size": 8,
+  "updates_per_rollout": 2,
+  "max_new_tokens": 12,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "top_k": 0,
+  "learning_rate": 2e-05,
+  "cliprange": 0.2,
+  "clip_ratio_c": 3.0,
+  "kl_coefficient": 0.01,
+  "kl_type": "low_var_kl",
+  "loss_agg_mode": "token-mean",
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "lora_targets": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "reference": "Frozen adapter from the best validation SFT epoch",
+  "selection_rule": "Maximum validation accuracy; ties retain the earlier checkpoint",
+  "grpo_validation_interval": 32,
+  "reward": "1 if the full stripped response parses as the correct integer, otherwise 0",
+  "test_policy": "Evaluate legacy and fresh tests only at the base, selected SFT, final GRPO, and selected stages; never select by test metrics",
+  "torch": "2.5.1+cu121",
+  "transformers": "4.57.3",
+  "execution_scope": "Single-GPU runner using original verl algorithm bodies",
+  "source": {
+    "revisions": {
+      "OpenRLHF": "a542dd98d29efacef89a4f694366e66c6e6d419b",
+      "verl": "8fdc4d3f202f41461f4de9f42a637228e342668b"
+    },
+    "files": {
+      "OpenRLHF/openrlhf/models/utils.py": "309dce4b14b968c6c393236cf264ad0802572c7ddf466ea6ddfcefb385d1f85d",
+      "OpenRLHF/openrlhf/models/loss.py": "7c9606fe39d5a007c59f63d458405f2bd16b2d14ffeeecb59ec6042096ca4125",
+      "OpenRLHF/openrlhf/trainer/ppo_utils/experience_maker.py": "1db3b7121d338c0234b9849c681c727a1a8e9d36115f6d23e05683ecff761808",
+      "verl/verl/trainer/ppo/core_algos.py": "c1072ca7983a8301d0c6d0659aa3f15b552d721d1b9f28efc6dc224713dabc8d",
+      "verl/verl/utils/torch_functional.py": "f540bf2d2e2a69c6732f2c4a4d71b428f10b8834b894555a4bfe4bc41acb7fb4"
+    }
+  },
+  "dataset_sha256": "4e8367008ae322560d374099e92fe356c2d94da94289efae908e390f6e35f060",
+  "trainable_parameters": 8798208
+}

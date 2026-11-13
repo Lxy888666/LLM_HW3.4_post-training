@@ -1,0 +1,17 @@
+# Downloaded model weights and local dependency copies
+advanced_artifacts/models/
+advanced_artifacts/python_deps/
+
+# Intermediate adapters
+advanced_artifacts/results/grpo_improved/adapter_sft/
+advanced_artifacts/results/grpo_improved/adapter_grpo_final/
+
+# Local environments and caches
+.venv/
+**/__pycache__/
+*.py[cod]
+**/.git/
+
+# Source material and generated archive not needed in this repository
+*.pptx
+LLM后训练技术演进综述_2023-2026.md

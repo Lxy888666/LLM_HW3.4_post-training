@@ -1,0 +1,226 @@
+[
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/cli/train_ppo_ray.py",
+    "symbol": "train",
+    "line": 18,
+    "end_line": 186
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/trainer/ppo_trainer.py",
+    "symbol": "fit",
+    "line": 113,
+    "end_line": 114
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/trainer/ppo_trainer.py",
+    "symbol": "ppo_train",
+    "line": 116,
+    "end_line": 151
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/trainer/ppo_trainer.py",
+    "symbol": "_broadcast_to_vllm",
+    "line": 153,
+    "end_line": 162
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/trainer/ppo_trainer.py",
+    "symbol": "fit",
+    "line": 460,
+    "end_line": 518
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/trainer/ppo_utils/experience_maker.py",
+    "symbol": "generate_samples",
+    "line": 153,
+    "end_line": 172
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/trainer/ppo_utils/experience_maker.py",
+    "symbol": "make_experience_list",
+    "line": 321,
+    "end_line": 334
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/trainer/ppo_utils/experience_maker.py",
+    "symbol": "make_experience",
+    "line": 337,
+    "end_line": 526
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/trainer/ppo_utils/experience_maker.py",
+    "symbol": "compute_advantages_and_returns",
+    "line": 529,
+    "end_line": 629
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/trainer/ppo_utils/experience_maker.py",
+    "symbol": "get_advantages_and_returns",
+    "line": 632,
+    "end_line": 676
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/trainer/ray/ppo_actor.py",
+    "symbol": "training_step",
+    "line": 195,
+    "end_line": 259
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/trainer/ray/ppo_critic.py",
+    "symbol": "training_step",
+    "line": 98,
+    "end_line": 141
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/models/actor.py",
+    "symbol": "forward",
+    "line": 135,
+    "end_line": 192
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/models/loss.py",
+    "symbol": "PolicyLoss",
+    "line": 75,
+    "end_line": 101
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/models/loss.py",
+    "symbol": "ValueLoss",
+    "line": 104,
+    "end_line": 134
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/models/utils.py",
+    "symbol": "compute_approx_kl",
+    "line": 7,
+    "end_line": 40
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/models/utils.py",
+    "symbol": "compute_reward",
+    "line": 43,
+    "end_line": 71
+  },
+  {
+    "project": "OpenRLHF",
+    "file": "openrlhf/models/utils.py",
+    "symbol": "masked_mean",
+    "line": 111,
+    "end_line": 114
+  },
+  {
+    "project": "verl",
+    "file": "verl/trainer/main_ppo.py",
+    "symbol": "main",
+    "line": 34,
+    "end_line": 40
+  },
+  {
+    "project": "verl",
+    "file": "verl/trainer/main_ppo.py",
+    "symbol": "run_ppo",
+    "line": 44,
+    "end_line": 80
+  },
+  {
+    "project": "verl",
+    "file": "verl/trainer/main_ppo.py",
+    "symbol": "run",
+    "line": 91,
+    "end_line": 241
+  },
+  {
+    "project": "verl",
+    "file": "verl/trainer/ppo/ray_trainer.py",
+    "symbol": "apply_kl_penalty",
+    "line": 153,
+    "end_line": 193
+  },
+  {
+    "project": "verl",
+    "file": "verl/trainer/ppo/ray_trainer.py",
+    "symbol": "compute_response_mask",
+    "line": 196,
+    "end_line": 211
+  },
+  {
+    "project": "verl",
+    "file": "verl/trainer/ppo/ray_trainer.py",
+    "symbol": "compute_advantage",
+    "line": 214,
+    "end_line": 291
+  },
+  {
+    "project": "verl",
+    "file": "verl/trainer/ppo/ray_trainer.py",
+    "symbol": "fit",
+    "line": 1084,
+    "end_line": 1421
+  },
+  {
+    "project": "verl",
+    "file": "verl/trainer/ppo/core_algos.py",
+    "symbol": "compute_grpo_outcome_advantage",
+    "line": 246,
+    "end_line": 308
+  },
+  {
+    "project": "verl",
+    "file": "verl/trainer/ppo/core_algos.py",
+    "symbol": "agg_loss",
+    "line": 686,
+    "end_line": 719
+  },
+  {
+    "project": "verl",
+    "file": "verl/trainer/ppo/core_algos.py",
+    "symbol": "compute_policy_loss",
+    "line": 722,
+    "end_line": 794
+  },
+  {
+    "project": "verl",
+    "file": "verl/trainer/ppo/core_algos.py",
+    "symbol": "kl_penalty",
+    "line": 1034,
+    "end_line": 1069
+  },
+  {
+    "project": "verl",
+    "file": "verl/workers/actor/dp_actor.py",
+    "symbol": "_forward_micro_batch",
+    "line": 80,
+    "end_line": 270
+  },
+  {
+    "project": "verl",
+    "file": "verl/workers/actor/dp_actor.py",
+    "symbol": "update_policy",
+    "line": 352,
+    "end_line": 486
+  },
+  {
+    "project": "verl",
+    "file": "verl/workers/reward_manager/naive.py",
+    "symbol": "__call__",
+    "line": 44,
+    "end_line": 120
+  }
+]

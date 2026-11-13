@@ -1,0 +1,41 @@
+{
+  "status": "all_passed",
+  "report_file": "LLM强化学习后训练代码分析与运行报告.md",
+  "report_sha256": "3c753918fa4428f0bcc6cb9e3e07ff4fc7ec4440fdc64e193b6097b7d2cd0a3f",
+  "reference_entries": 11,
+  "references_cited": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "source_symbols_checked": 32,
+  "source_table_locations_checked": 15,
+  "exact_source_excerpts_checked": 2,
+  "source_snapshot_files_checked": 927,
+  "markdown_tables": 13,
+  "display_equations": 6,
+  "core_probe_groups": 8,
+  "optimizer_calls": 48,
+  "nonzero_gradient_calls": 34,
+  "rollout_completions": 192,
+  "group_distribution": {
+    "all_wrong": 39,
+    "all_correct": 4,
+    "mixed": 5
+  },
+  "before_correct": 3,
+  "after_correct": 6,
+  "checkpoint_matching_answers": 32,
+  "saved_adapter_parameters": 540672,
+  "improved_selected_stage": "sft_epoch_4",
+  "improved_test_correct": 28,
+  "improved_fresh_test_correct": 221
+}

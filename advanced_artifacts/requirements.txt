@@ -1,0 +1,7 @@
+# Install PyTorch 2.5.1 with the appropriate CUDA wheel separately (see README).
+transformers==4.57.3
+peft==0.17.1
+accelerate==1.10.1
+numpy==1.26.4
+requests==2.34.2
+safetensors==0.7.0
